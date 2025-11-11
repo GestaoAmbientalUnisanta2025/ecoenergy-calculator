@@ -1,0 +1,61 @@
+import { PresetAppliance, RoomType } from "./types";
+
+export const ROOM_PRESETS: Record<RoomType, PresetAppliance[]> = {
+  Sala: [
+    { name: "TV LED 32\"", power: 60, defaultHours: 5, defaultMinutes: 0, category: "Eletrônicos" },
+    { name: "TV LED 50\"", power: 100, defaultHours: 5, defaultMinutes: 0, category: "Eletrônicos" },
+    { name: "TV LED 65\"", power: 150, defaultHours: 4, defaultMinutes: 0, category: "Eletrônicos" },
+    { name: "Ar-condicionado 9000 BTU", power: 900, defaultHours: 6, defaultMinutes: 0, category: "Climatização" },
+    { name: "Ar-condicionado 12000 BTU", power: 1200, defaultHours: 6, defaultMinutes: 0, category: "Climatização" },
+    { name: "Ventilador de teto", power: 100, defaultHours: 8, defaultMinutes: 0, category: "Climatização" },
+    { name: "Ventilador de mesa", power: 60, defaultHours: 6, defaultMinutes: 0, category: "Climatização" },
+    { name: "Lâmpada LED 9W", power: 9, defaultHours: 6, defaultMinutes: 0, category: "Iluminação" },
+    { name: "Lâmpada LED 12W", power: 12, defaultHours: 6, defaultMinutes: 0, category: "Iluminação" },
+    { name: "Home Theater", power: 200, defaultHours: 3, defaultMinutes: 0, category: "Eletrônicos" },
+    { name: "Videogame", power: 150, defaultHours: 3, defaultMinutes: 0, category: "Eletrônicos" },
+    { name: "Roteador Wi-Fi", power: 10, defaultHours: 24, defaultMinutes: 0, category: "Eletrônicos" },
+  ],
+  Quarto: [
+    { name: "TV LED 32\"", power: 60, defaultHours: 3, defaultMinutes: 0, category: "Eletrônicos" },
+    { name: "Ar-condicionado 9000 BTU", power: 900, defaultHours: 8, defaultMinutes: 0, category: "Climatização" },
+    { name: "Ar-condicionado 12000 BTU", power: 1200, defaultHours: 8, defaultMinutes: 0, category: "Climatização" },
+    { name: "Ventilador de teto", power: 100, defaultHours: 10, defaultMinutes: 0, category: "Climatização" },
+    { name: "Lâmpada LED 9W", power: 9, defaultHours: 4, defaultMinutes: 0, category: "Iluminação" },
+    { name: "Lâmpada LED 12W", power: 12, defaultHours: 4, defaultMinutes: 0, category: "Iluminação" },
+    { name: "Carregador de celular", power: 5, defaultHours: 3, defaultMinutes: 0, category: "Eletrônicos" },
+    { name: "Notebook", power: 65, defaultHours: 4, defaultMinutes: 0, category: "Eletrônicos" },
+    { name: "Abajur LED", power: 7, defaultHours: 2, defaultMinutes: 0, category: "Iluminação" },
+  ],
+  Cozinha: [
+    { name: "Geladeira Duplex", power: 150, defaultHours: 24, defaultMinutes: 0, category: "Refrigeração" },
+    { name: "Geladeira Frost Free", power: 200, defaultHours: 24, defaultMinutes: 0, category: "Refrigeração" },
+    { name: "Freezer", power: 180, defaultHours: 24, defaultMinutes: 0, category: "Refrigeração" },
+    { name: "Micro-ondas", power: 1200, defaultHours: 0, defaultMinutes: 30, category: "Cozinha" },
+    { name: "Fogão elétrico (1 boca)", power: 1500, defaultHours: 1, defaultMinutes: 0, category: "Cozinha" },
+    { name: "Forno elétrico", power: 1500, defaultHours: 1, defaultMinutes: 0, category: "Cozinha" },
+    { name: "Liquidificador", power: 300, defaultHours: 0, defaultMinutes: 10, category: "Cozinha" },
+    { name: "Cafeteira elétrica", power: 600, defaultHours: 0, defaultMinutes: 30, category: "Cozinha" },
+    { name: "Torradeira", power: 800, defaultHours: 0, defaultMinutes: 10, category: "Cozinha" },
+    { name: "Lava-louças", power: 1500, defaultHours: 1, defaultMinutes: 0, category: "Cozinha" },
+    { name: "Exaustor", power: 150, defaultHours: 1, defaultMinutes: 0, category: "Ventilação" },
+    { name: "Lâmpada LED 12W", power: 12, defaultHours: 5, defaultMinutes: 0, category: "Iluminação" },
+  ],
+  Banheiro: [
+    { name: "Chuveiro elétrico 5500W", power: 5500, defaultHours: 0, defaultMinutes: 30, category: "Aquecimento" },
+    { name: "Chuveiro elétrico 7500W", power: 7500, defaultHours: 0, defaultMinutes: 30, category: "Aquecimento" },
+    { name: "Secador de cabelo", power: 1500, defaultHours: 0, defaultMinutes: 15, category: "Cuidados" },
+    { name: "Chapinha", power: 180, defaultHours: 0, defaultMinutes: 20, category: "Cuidados" },
+    { name: "Exaustor", power: 100, defaultHours: 1, defaultMinutes: 0, category: "Ventilação" },
+    { name: "Lâmpada LED 9W", power: 9, defaultHours: 3, defaultMinutes: 0, category: "Iluminação" },
+  ],
+  Lavanderia: [
+    { name: "Máquina de lavar 10kg", power: 500, defaultHours: 1, defaultMinutes: 30, category: "Lavanderia" },
+    { name: "Máquina de lavar 15kg", power: 700, defaultHours: 1, defaultMinutes: 30, category: "Lavanderia" },
+    { name: "Secadora de roupas", power: 3500, defaultHours: 1, defaultMinutes: 0, category: "Lavanderia" },
+    { name: "Ferro de passar", power: 1000, defaultHours: 1, defaultMinutes: 0, category: "Lavanderia" },
+    { name: "Aspirador de pó", power: 1000, defaultHours: 0, defaultMinutes: 30, category: "Limpeza" },
+    { name: "Lâmpada LED 12W", power: 12, defaultHours: 2, defaultMinutes: 0, category: "Iluminação" },
+  ],
+};
+
+export const DEFAULT_TARIFF = 0.97; // R$ por kWh (média Brasil 2025)
